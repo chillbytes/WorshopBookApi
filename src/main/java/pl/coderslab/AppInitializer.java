@@ -6,7 +6,9 @@ import pl.coderslab.AppConfig;
 public class AppInitializer extends
         AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
-    protected Class<?>[] getRootConfigClasses() { return null; }
+    protected Class<?>[] getRootConfigClasses() {
+        return null;
+    }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
@@ -15,4 +17,6 @@ public class AppInitializer extends
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};   }
+
+
 }
